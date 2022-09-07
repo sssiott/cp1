@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team4</title>
+    <link rel="stylesheet" href="../static/result.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_wrap">
+        <p>TEAM 4</p>
+      </div>
+    </header>
+    <main>
+      <div class="result">
+        <h1 class="showprice">{{ price }}원 이내로 만들 수 있는 음식입니다</h1>
+      </div>
+      <div class="prac">
+        {% for i in a%}
+        <p id="price">{{i[0]}}</p><br>
+        <p id="unit">({{i[1]}}원)</p>
+        {% endfor %}
+      </div>
+    </main>
+  </body>
+</html>

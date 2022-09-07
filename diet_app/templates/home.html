@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team4</title>
+    <link rel="stylesheet" href="../static/home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_wrap">
+        <p>TEAM 4</p>
+      </div>
+    </header>
+    <main>
+      <div class="content_wrap">
+        <div class="left_form">
+          <form method="post" action="/search/">
+            <p>ingredients :</p>
+            <select name="ingredients" id="select">
+              <option value="">주재료를 선택해주세요</option>
+              <option value="meat">소고기</option>
+              <option value="pork">돼지고기</option>
+              <option value="egg">달걀</option></select
+            ><br />
+            <p>price :</p>
+            <input
+              type="text"
+              name="price"
+              placeholder="금액을 입력해주세요"
+            /><br />
+            <!-- <input type="range" name="price" value="3000" min="2000" max="30000" step="100" oninput="this.nextElementSibling.value = this.value"> <output>3000</output><span>원</span><br> -->
+            <p>category :</p>
+            <select name="category" id="select">
+              <option value="">주재료를 선택해주세요</option>
+              <option value="korean">한식</option>
+              <option value="pork">밥</option>
+              <option value="egg">반찬</option>
+            </select>
+            <p>dislike :</p>
+            <input type="text" name="dislike" /><br />
+            <button type="submit">검색하기</button>
+            <button type="reset">재설정</button>
+          </form>
+        </div>
+        <div class="right_form">
+          <div class="right_image">이미지</div>
+          <form method="get" action="/menu/">
+            <input type="search" name="menu" placeholder="검색어를 입력하세요" />
+            <button type="submit">돋보기</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

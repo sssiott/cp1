@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for i, val in enumerate(ls) %}
+        {% if i == 0 %}
+            {% if ls[0] != "" %}
+                {{ls[0]}} 로 검색했어요.<br>
+            {% else %}
+            {% endif %}
+
+        {% elif i == 1 %}
+            {% if ls[1] != "" %}
+                {{ls[1]}} 원 이내로 만들 수 있는 레시피에요.<br>
+            {% else %}
+            {% endif %}
+
+        {% else %}
+            {% if ls[2] != "" %}
+                {{ls[2]}} 카테고리에 있는 레시피에요.<br>
+            {% else %}
+            {% endif %}
+
+        {% endif %}
+    {% endfor %}
+    
+
+    {% if dislike %}
+        {{dislike}} 가 포함되지 않은 레시피를 준비했어요.
+    {% else %}
+    {% endif %}
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+.header_wrap > p {
+  border-bottom: solid black;
+  font-size: 3rem;
+  padding-bottom: 1.8rem;
+
+}
+.prac {
+  display: flex;
+}
+.prac p {
+  /* border: solid black 3px; */
+  background-color: midnightblue;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+#price {
+  font-weight: bold;
+}
+#unit {
+  margin-left: 0.5rem;
+  margin-right: 3rem;
+  font-size: 1rem;
+}
+.showprice {
+  text-align: center;
+}
+main {
+  background-color: blanchedalmond;
+  height: 100rem;
+  padding-top: 2rem;
+}

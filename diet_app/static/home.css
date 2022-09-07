@@ -1,0 +1,27 @@
+.header_wrap > p {
+  border-bottom: solid black;
+  font-size: 3rem;
+  padding-bottom: 1.8rem;
+}
+
+.content_wrap {
+  display: flex;
+  background-color: cornsilk;
+  height: 30rem;
+}
+
+.content_wrap div {
+  /* background-color: powderblue; */
+  border: solid white 1px;
+  width: 50rem;
+  text-align: center;
+  margin: 3rem;
+}
+.right_form {
+    display:flex;
+    flex-direction: column;
+
+}
+.right_image {
+  background-color: lightskyblue;
+}
